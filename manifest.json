@@ -1,0 +1,22 @@
+{
+  "author": "Kagami Sascha Rosylight",
+  "background": {
+    "scripts": [
+      "copy.js"
+    ],
+    "persistent": false
+  },
+  "description": "Add 'Copy picture location' option for Microsoft Edge",
+  "icons": {
+    "128": "icon128.png",
+    "16": "icon16.png",
+    "48": "icon48.png"
+  },
+  "manifest_version": 2,
+  "name": "Copy Picture Location",
+  "permissions": [
+    "clipboardWrite",
+    "contextMenus"
+  ],
+  "version": "1.0.0"
+}
