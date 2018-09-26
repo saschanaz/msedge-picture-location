@@ -4,7 +4,7 @@
     "scripts": [
       "copy.js"
     ],
-    "persistent": false
+    "persistent": true
   },
   "description": "Add 'Copy picture location' option for Microsoft Edge",
   "icons": {
