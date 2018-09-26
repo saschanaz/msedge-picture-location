@@ -19,10 +19,12 @@ function writeToClipboard(text) {
   document.execCommand("copy");
 }
 
-browser.contextMenus.create({
-  id,
-  title: 'Copy picture location',
-  contexts: ['image']
+browser.runtime.onInstalled.addListener(() => {
+  browser.contextMenus.create({
+    id,
+    title: 'Copy picture location',
+    contexts: ['image']
+  })
 });
 
 browser.contextMenus.onClicked.addListener(info => {
