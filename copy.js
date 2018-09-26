@@ -1,6 +1,10 @@
 "use strict";
 const id = 'msedge-picture-location';
 
+if (typeof browser === "undefined") {
+  var browser = chrome;
+}
+
 function copyPictureLocation(info) {
   writeToClipboard(info.srcUrl);
 };
